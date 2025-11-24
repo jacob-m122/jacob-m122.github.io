@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jacob Mitani – CS Seminar Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* Simple, clean styling for the seminar assignment */
+    :root {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: #0f172a;
+      color: #e5e7eb;
+    }
+
+    header {
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      background: linear-gradient(135deg, #1d4ed8, #4f46e5);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+
+    header p {
+      margin: 0.4rem 0;
+      opacity: 0.9;
+    }
+
+    .links a {
+      color: #e5e7eb;
+      text-decoration: none;
+      font-weight: 500;
+      margin: 0 0.5rem;
+      padding: 0.35rem 0.7rem;
+      border-radius: 999px;
+      border: 1px solid rgba(229, 231, 235, 0.4);
+      display: inline-block;
+      margin-top: 0.6rem;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 3rem;
+    }
+
+    section {
+      margin-bottom: 2rem;
+      background: rgba(15, 23, 42, 0.85);
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      border: 1px solid rgba(148, 163, 184, 0.4);
+    }
+
+    section h2 {
+      margin-top: 0;
+      font-size: 1.4rem;
+      margin-bottom: 0.75rem;
+      color: #bfdbfe;
+    }
+
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.5rem;
+    }
+
+    .pill {
+      padding: 0.3rem 0.7rem;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.7);
+      font-size: 0.9rem;
+    }
+
+    .project {
+      margin-bottom: 1.1rem;
+    }
+
+    .project-title {
+      font-weight: 600;
+    }
+
+    .project-links a {
+      color: #93c5fd;
+      text-decoration: none;
+      font-size: 0.9rem;
+      margin-right: 0.75rem;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      padding: 1rem 0 1.5rem;
+      color: #9ca3af;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (min-width: 700px) {
+      header h1 {
+        font-size: 2.6rem;
+      }
+
+      main {
+        padding-top: 2.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jacob Mitani</h1>
+    <p>Data Science &amp; Computer Science Student – University of Oregon</p>
+    <p>Interests: Machine Learning, Neural Networks, Music Technology, Audio &amp; Sonification</p>
+    <div class="links">
+      <!-- TODO: replace # with your real links -->
+      <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/YOUR-GITHUB" target="_blank" rel="noopener">GitHub</a>
+      <!-- Optional: personal music / portfolio links -->
+      <a href="https://open.spotify.com/artist/YOUR-ARTIST-PAGE" target="_blank" rel="noopener">Music</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I’m a data science major with interests in algorithms, machine learning, and music technology.
+        In this CS seminar, I’m focusing on refining my technical skills, documenting projects clearly,
+        and building a stronger web presence to connect code, research, and creative work.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Technical Skills &amp; Tools</h2>
+      <div class="pill-list">
+        <span class="pill">Python</span>
+        <span class="pill">NumPy</span>
+        <span class="pill">Pandas</span>
+        <span class="pill">scikit-learn</span>
+        <span class="pill">Matplotlib</span>
+        <span class="pill">Jupyter Notebooks</span>
+        <span class="pill">Git &amp; GitHub</span>
+        <span class="pill">HTML &amp; CSS (beginner)</span>
+        <span class="pill">Audio / DAWs</span>
+        <span class="pill">Data Visualization</span>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Highlighted Projects</h2>
+
+      <div class="project">
+        <div class="project-title">Neural Network from Scratch (Feed-Forward Backprop)</div>
+        <p>
+          Implemented a fully connected feed-forward neural network in Python, focusing on
+          custom data handling, backpropagation, and evaluation metrics. Used it to experiment
+          with different activation functions and training parameters.
+        </p>
+        <div class="project-links">
+          <!-- Replace with your repo link if you have one -->
+          <a href="https://github.com/YOUR-GITHUB/ffbp-network" target="_blank" rel="noopener">View on GitHub</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-title">Data Sonification &amp; Music Technology Experiments</div>
+        <p>
+          Explored mapping scientific and environmental data to audio parameters to create
+          data-driven musical pieces. Used Python to preprocess datasets and DAWs/synthesis
+          tools to turn patterns into sound.
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/YOUR-GITHUB/data-sonification" target="_blank" rel="noopener">Code / Notes</a>
+          <a href="https://soundcloud.com/YOUR-SOUNDCLOUD" target="_blank" rel="noopener">Listen</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-title">Planned: Music Genre Classifier</div>
+        <p>
+          A planned project using Python, librosa, and machine learning to classify songs by
+          genre based on extracted audio features (spectral, rhythmic, and timbral descriptors).
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/YOUR-GITHUB" target="_blank" rel="noopener">Work in Progress</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Links &amp; Contact</h2>
+      <p>
+        The best way to reach me is via email or LinkedIn. I’m open to opportunities related to
+        data science, ML, or audio / music technology.
+      </p>
+      <ul>
+        <li>Email: <a href="mailto:YOUR.EMAIL@uoregon.edu">YOUR.EMAIL@uoregon.edu</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener">linkedin.com/in/YOUR-LINKEDIN</a></li>
+        <li>GitHub: <a href="https://github.com/YOUR-GITHUB" target="_blank" rel="noopener">github.com/YOUR-GITHUB</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> Jacob Mitani · Built for CS Seminar
+  </footer>
+
+  <script>
+    // Tiny script to keep the year up to date
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
